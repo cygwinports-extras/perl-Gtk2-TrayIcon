@@ -1,0 +1,85 @@
+perl-Gtk2-TrayIcon
+-------------------------------------------
+This module allows a Perl developer to embed an arbitrary widget in a
+System Tray like the Gnome notification area.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  glib2-2.12.12-2
+  gtk2-x11-2.10.13-1
+  libX11_6-1.1.1-1
+  perl-5.8.7-5
+  perl-Glib-1.144-1
+  perl-Gtk2-1.144-1
+
+Build requirements:
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.3.1-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  perl-5.8.7-5
+  perl-ExtUtils-Depends-0.205-1
+  perl-ExtUtils-PkgConfig-1.07-1
+
+Canonical homepage:
+  http://gtk2-perl.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/gtk2-perl/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-Gtk2-TrayIcon-0.06-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-Gtk2-TrayIcon-0.06-1.cygport all
+
+This will create:
+  /usr/src/perl-Gtk2-TrayIcon-0.06-1-src.tar.bz2
+  /usr/src/perl-Gtk2-TrayIcon-0.06-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/perl-Gtk2-TrayIcon.sh
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/TrayIcon.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/TrayIcon/Install/Files.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/TrayIcon/Install/trayicon-autogen.h
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/TrayIcon/Install/trayicon.typemap
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Gtk2/TrayIcon/.packlist
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Gtk2/TrayIcon/TrayIcon.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Gtk2/TrayIcon/TrayIcon.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Gtk2/TrayIcon/libTrayIcon.dll.a
+  /usr/share/doc/Cygwin/perl-Gtk2-TrayIcon-0.06.README
+  /usr/share/doc/perl-Gtk2-TrayIcon-0.06/ChangeLog
+  /usr/share/doc/perl-Gtk2-TrayIcon-0.06/README
+  /usr/share/doc/perl-Gtk2-TrayIcon-0.06/TODO
+  /usr/share/man/man3/Gtk2.TrayIcon.3pm.gz
+  /usr/share/perl/cygwin-pods/5.8/Gtk2-TrayIcon.pod
+
+--------------------
+
+Port Notes:
+
+----- version 0.06-1 -----
+Version bump.
+
+----- version 0.04-4 -----
+Rebuilt for perl-5.8.7 with --enable-auto-image-base.
+
+----- version 0.04-3 -----
+Rebuilt for perl-5.8.6 with a new build script.
+
+----- version 0.04-2 -----
+Rebuilt for perl-5.8.5.
+
+----- version 0.04-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

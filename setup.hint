@@ -1,0 +1,5 @@
+category: Perl Gnome
+requires: cygwin glib2 gtk2-x11 libX11_6 perl perl-Glib perl-Gtk2
+sdesc: "Perl GNOME notification area module"
+ldesc: "This module allows a Perl developer to embed an arbitrary 
+widget in a System Tray like the Gnome notification area."
